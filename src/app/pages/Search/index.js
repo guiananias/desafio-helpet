@@ -24,10 +24,13 @@ export default function SearchPage({ navigation }) {
 
     setLoading(true);
 
-    navigation.navigate('Main', {
-      screen: 'Movies',
+    navigation.navigate('Movies', {
+      screen: 'Main',
       params: {
-        query: valueInput,
+        screen: 'Movies',
+        params: {
+          query: valueInput,
+        },
       },
     });
 
