@@ -65,7 +65,9 @@ export default function SearchPage({ navigation }) {
       </SearchContainer>
 
       <FavoriteContainer>
-        <FavoriteLink>Your favorite movies</FavoriteLink>
+        <FavoriteLink onPress={() => navigation.navigate('Favorites')}>
+          Your favorite movies
+        </FavoriteLink>
       </FavoriteContainer>
     </Container>
   );
