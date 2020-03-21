@@ -1,7 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import propTypes from 'prop-types';
 import { Text } from 'react-native';
 
 import MoviesPage from '../pages/Movies';
@@ -52,8 +51,3 @@ export default function TabRoutes() {
     </Tab.Navigator>
   );
 }
-
-Tab.Screen.propTypes = {
-  focused: propTypes.bool.isRequired,
-  color: propTypes.string.isRequired,
-};
