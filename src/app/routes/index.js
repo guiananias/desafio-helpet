@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import SearchPage from '../pages/Search';
 import FavoritesPage from '../pages/Favorites';
-import TabNavigationPages from './_TabNavigation';
+import ModalWithTabNavigation from './_DetailsNavigation';
 
 const RootStack = createStackNavigator();
 
@@ -13,7 +13,7 @@ export default function Routes() {
     <NavigationContainer>
       <RootStack.Navigator screenOptions={{ headerShown: false }}>
         <RootStack.Screen name="Search" component={SearchPage} />
-        <RootStack.Screen name="Main" component={TabNavigationPages} />
+        <RootStack.Screen name="Movies" component={ModalWithTabNavigation} />
         <RootStack.Screen name="Favorites" component={FavoritesPage} />
       </RootStack.Navigator>
     </NavigationContainer>
