@@ -17,3 +17,7 @@ export const Title = styled.Text`
 export const Description = styled.Text`
   flex: 1;
 `;
+
+export const LinkContainer = styled.View`
+  flex: 1;
+`;

@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useContext, memo } from 'react';
+import { TouchableWithoutFeedback } from 'react-native';
 import propTypes from 'prop-types';
+import { useNavigation } from '@react-navigation/native';
 
-import { Container, Title, Description } from './style';
+import { Container, Title, Description, LinkContainer } from './style';
 import { FavoriteButtonComponent } from '../FavoriteButton';
 
 import { GetStore, SetStore } from '../../../utils/asyncStorageMethods';
@@ -15,6 +17,7 @@ export const CardComponent = memo(({ data }) => {
   const [love, setLove] = useState(false);
   const [favoriteMovies, setFavoriteMovies] = useState([]);
   const appStore = useContext(AppContext);
+  const navigation = useNavigation();
 
   useEffect(() => {
     (async () => {
@@ -74,8 +77,15 @@ export const CardComponent = memo(({ data }) => {
 
   return (
     <Container>
-      <Title>{data.title}</Title>
-      <Description numberOfLines={3}>{data.overview}</Description>
+      <TouchableWithoutFeedback
+        onPress={() => navigation.navigate('Details', { data })}
+      >
+        <LinkContainer>
+          <Title>{data.title}</Title>
+          <Description numberOfLines={3}>{data.overview}</Description>
+        </LinkContainer>
+      </TouchableWithoutFeedback>
+
       <FavoriteButtonComponent
         onPress={() => (love ? handleUnlove() : handleLove())}
         themeState={love}
