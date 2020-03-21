@@ -24,7 +24,7 @@ export default function SearchPage({ navigation }) {
 
     setLoading(true);
 
-    navigation.navigate('Movies', { query: valueInput });
+    navigation.navigate('Main', { query: valueInput });
 
     setValueInput('');
     setLoading(false);
