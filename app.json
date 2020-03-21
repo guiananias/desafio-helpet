@@ -2,7 +2,7 @@
   "expo": {
     "name": "Movie Searcher",
     "slug": "desafio-helpet",
-    "privacy": "private",
+    "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
       "ios",
