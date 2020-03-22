@@ -41,7 +41,8 @@
     "eslint-plugin-react-hooks": "^2.5.1",
     "husky": "^4.2.3",
     "jest-expo": "^36.0.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "react-test-renderer": "^16.13.1"
   },
   "private": true
 }
