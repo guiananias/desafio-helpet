@@ -16,10 +16,10 @@ Movie Searcher is an application developed in order to help you find that perfec
 
 <div align="center">
 
-<img src="./docs/assets/screenshot1.jpeg" width="220">
-<img src="./docs/assets/screenshot2.jpeg" width="220"> 
-<img src="./docs/assets/screenshot3.jpeg" width="220">
-<img src="./docs/assets/screenshot4.jpeg" width="220">
+<img src="./docs/assets/screenshot1.jpeg" width="300">
+<img src="./docs/assets/screenshot2.jpeg" width="300"> 
+<img src="./docs/assets/screenshot3.jpeg" width="300">
+<img src="./docs/assets/screenshot4.jpeg" width="300">
 
 </div>
 
