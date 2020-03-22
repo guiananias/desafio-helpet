@@ -9,6 +9,7 @@
   - [Code](#code)
     - [Dev Enviroment](#dev-environment)
   - [Commiting](#commiting)
+  - [Submitting a pull request](#submitting-a-pull-request)
 
 ## Getting started
 
