@@ -25,6 +25,9 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "extra": {
+      "API_KEY": "6e09219c6174d28a7f04d7d8467efd6f"
     }
   }
 }
