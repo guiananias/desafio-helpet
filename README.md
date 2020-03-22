@@ -8,17 +8,18 @@
 
 Movie Searcher is an application developed in order to help you find that perfect movie.
 
-- **[Screenshots](##Screenshots)**
-- **[Running](##Running)**
-- **[Technologies](##Technologies)**
+- **[Screenshots](#Screenshots)**
+- **[Running](#Running)**
+- **[Technologies](#Technologies)**
 
 ## Screenshots
 
 <div align="center">
 
-| <img src="./docs/assets/screenshot1.jpeg" width="220"> | <img src="./docs/assets/screenshot2.jpeg" width="220">  |
-| :---: | :---: |
-| <img src="./docs/assets/screenshot3.jpeg" width="220"> | <img src="./docs/assets/screenshot4.jpeg" width="220">  |
+<img src="./docs/assets/screenshot1.jpeg" width="220">
+<img src="./docs/assets/screenshot2.jpeg" width="220"> 
+<img src="./docs/assets/screenshot3.jpeg" width="220">
+<img src="./docs/assets/screenshot4.jpeg" width="220">
 
 </div>
 
