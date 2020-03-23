@@ -5,7 +5,7 @@ import { FavoriteButtonComponent as FavoriteButton } from '../../app/components/
 
 describe('<FavoriteButtonComponent />', () => {
   it('should to match snapshot', () => {
-    const wrapper = shallow(<FavoriteButton />);
+    const wrapper = shallow(<FavoriteButton onPress={() => null} themeState />);
 
     expect(wrapper).toMatchSnapshot();
   });
