@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FavoriteButtonComponent /> should to match snapshot 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "backgroundColor": "#f01141",
+      "borderColor": "#f01141",
+      "borderRadius": "4px",
+      "borderWidth": "1px",
+      "color": "#fff",
+      "fontSize": "18px",
+      "fontWeight": 700,
+      "padding": "12px 0",
+      "textAlign": "center",
+    }
+  }
+>
+  <Styled(RectButton)
+    onPress={[Function]}
+  >
+    <Styled(Text)>
+      <Styled(Icon)
+        color="#fff"
+        name="heart"
+        size={24}
+      />
+    </Styled(Text)>
+  </Styled(RectButton)>
+</ThemeProvider>
+`;
