@@ -19,14 +19,6 @@ export const CardComponent = memo(({ data }) => {
   const appStore = useContext(AppContext);
   const navigation = useNavigation();
 
-  useEffect(() => {
-    (async () => {
-      const storage = (await GetStore('favorite_movies')) || [];
-
-      appStore.favorites = [...storage];
-    })();
-  }, [appStore.favorites]);
-
   async function handleLove() {
     setLove(true);
 
