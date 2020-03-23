@@ -5,14 +5,20 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest",
+    "lint": "eslint src --ext js"
   },
   "dependencies": {
+    "@expo/vector-icons": "^10.0.0",
     "@react-native-community/masked-view": "0.1.5",
     "@react-navigation/bottom-tabs": "^5.2.2",
     "@react-navigation/native": "^5.1.1",
     "@react-navigation/stack": "^5.2.3",
+    "axios": "^0.19.2",
     "expo": "~36.0.0",
+    "expo-constants": "~8.0.0",
+    "prop-types": "^15.7.2",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
@@ -28,6 +34,7 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "babel-preset-expo": "~8.0.0",
+    "enzyme": "^3.11.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.0",
@@ -37,7 +44,10 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
     "husky": "^4.2.3",
-    "prettier": "^1.19.1"
+    "jest-expo": "^36.0.1",
+    "jest-expo-enzyme": "^1.0.0",
+    "prettier": "^1.19.1",
+    "react-test-renderer": "^16.13.1"
   },
   "private": true
 }

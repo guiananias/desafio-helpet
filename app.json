@@ -2,7 +2,7 @@
   "expo": {
     "name": "Movie Searcher",
     "slug": "desafio-helpet",
-    "privacy": "private",
+    "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
       "ios",
@@ -25,6 +25,9 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "extra": {
+      "API_KEY": "6e09219c6174d28a7f04d7d8467efd6f"
     }
   }
 }
