@@ -1,0 +1,60 @@
+name: Checks
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      
+      - name: Install dependencies
+        run: yarn
+
+      - name: Checking tests
+        run: yarn test
+        env:
+          CI: true
+
+      - name: Checking lint
+        run: yarn lint
+  
+  publish:
+    name: Install and publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      
+      - name: Config Expo-CLI
+        with:
+          expo-version: 3.x
+          expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
+          expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Publish on Expo
+        run: expo publish
+      
+      - name: Run Comment in PR Action
+        uses: unsplash/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          msg: App is ready for review, you can [see it here](https://expo.io/@doskya/use-expo?release-channel=pr-${{ github.event.number }}).
